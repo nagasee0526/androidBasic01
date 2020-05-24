@@ -8,6 +8,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    val REQ_FOR_NICKNAME = 1000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,14 +47,14 @@ class MainActivity : AppCompatActivity() {
         editNicknameBtn.setOnClickListener {
 
             val MyIntent = Intent(this, EditNickActivity::class.java)
-            startActivityForResult(MyIntent, 1000)
+            startActivityForResult(MyIntent, REQ_FOR_NICKNAME)
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == 1000) {
+        if (requestCode == REQ_FOR_NICKNAME) {
             if( resultCode == Activity.RESULT_OK) {
                 val NewNick = data?.getStringExtra( "nick")
                 nickNametxt.text = NewNick
