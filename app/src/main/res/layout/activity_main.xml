@@ -21,4 +21,30 @@
         android:layout_height="wrap_content"
         android:text="2번 액티비티"/>
 
+    <EditText
+        android:id="@+id/ContentEdit"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="3번 액티비티에 전달할 내용을 입력해라"/>
+    <Button
+        android:id="@+id/goThirdAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3번 액티비티"/>
+
+
+    <EditText
+        android:id="@+id/EditPhon"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="전화번호를입력하세요"/>
+    <Button
+        android:id="@+id/goforthAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4번 액티비티"/>
+
 </LinearLayout>

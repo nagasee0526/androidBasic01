@@ -22,5 +22,23 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, SecondActivity::class.java)
             startActivity(myIntent)
         }
+
+        goThirdAct.setOnClickListener {
+            val InputContent = ContentEdit.text.toString()
+
+            val MyIntent = Intent(this, ThirdActivity::class.java)
+            MyIntent.putExtra("content", InputContent)
+         //   MyIntent.putExtra("numver", 10)
+            startActivity(MyIntent)
+        }
+
+        goforthAct.setOnClickListener {
+            val InputContent = EditPhon.text.toString()
+
+            val MyIntent = Intent(this, ForthActivity::class.java)
+            MyIntent.putExtra("phonnum", InputContent)
+
+            startActivity(MyIntent)
+        }
     }
 }

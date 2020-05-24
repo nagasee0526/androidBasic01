@@ -4,23 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
-    android:padding="10dp"
-    tools:context=".SecondActivity">
+    tools:context=".ForthActivity">
 
     <TextView
+        android:id="@+id/viewphonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="두번째 액티비티"
-        android:textSize="25dp"
-        android:textColor="#FF0000"/>
-
-    <Button
-        android:id="@+id/goBackBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="돌아가기"/>
+        android:textSize="20dp"
+        android:text="입력받은 전화번호"
+        android:textColor="#FF0000"
+        />
 
 </LinearLayout>
