@@ -1,5 +1,6 @@
 package com.ubis.androidbasic01
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -46,5 +47,17 @@ class MainActivity : AppCompatActivity() {
             val MyIntent = Intent(this, EditNickActivity::class.java)
             startActivityForResult(MyIntent, 1000)
         }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == 1000) {
+            if( resultCode == Activity.RESULT_OK) {
+                val NewNick = data?.getStringExtra( "nick")
+                nickNametxt.text = NewNick
+            }
+        }
+
     }
 }
