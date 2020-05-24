@@ -15,6 +15,12 @@ class MainActivity : AppCompatActivity() {
 
             val myIntent = Intent(this, FirstActivity::class.java)
             startActivity(myIntent)
+         //   finish()
+        }
+
+        goSecondAct.setOnClickListener {
+            val myIntent = Intent(this, SecondActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }
