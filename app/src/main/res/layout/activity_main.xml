@@ -36,7 +36,7 @@
 
     <EditText
         android:id="@+id/EditPhon"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
@@ -46,5 +46,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="4번 액티비티"/>
+
+    <TextView
+        android:id="@+id/nickNametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임 자리"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/editNicknameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉네임 변경하기" />
 
 </LinearLayout>

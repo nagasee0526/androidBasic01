@@ -40,5 +40,9 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(MyIntent)
         }
+
+        editNicknameBtn.setOnClickListener {
+
+        }
     }
 }
